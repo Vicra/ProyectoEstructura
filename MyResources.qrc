@@ -7,5 +7,9 @@
         <file>archivo.png</file>
         <file>refresh.png</file>
         <file>search.png</file>
+        <file>eliminar.png</file>
+        <file>copy.png</file>
+        <file>cut.png</file>
+        <file>paste.png</file>
     </qresource>
 </RCC>

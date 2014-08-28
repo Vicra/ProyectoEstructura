@@ -6,64 +6,168 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>532</width>
-    <height>381</height>
+    <width>587</width>
+    <height>351</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Proyecto</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <layout class="QHBoxLayout" name="horizontalLayout_3">
+   <layout class="QHBoxLayout" name="horizontalLayout_4">
     <item>
-     <layout class="QVBoxLayout" name="verticalLayout">
+     <layout class="QVBoxLayout" name="verticalLayout_2">
       <item>
-       <layout class="QHBoxLayout" name="horizontalLayout">
+       <layout class="QVBoxLayout" name="verticalLayout">
         <item>
-         <widget class="QPushButton" name="backButton">
-          <property name="toolTip">
-           <string>Back</string>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="icon">
-           <iconset resource="MyResources.qrc">
-            <normaloff>:/Images/back.png</normaloff>:/Images/back.png</iconset>
-          </property>
-         </widget>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QPushButton" name="backButton">
+            <property name="toolTip">
+             <string>Back</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="MyResources.qrc">
+              <normaloff>:/Images/back.png</normaloff>:/Images/back.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="frontButton">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="cursor">
+             <cursorShape>ArrowCursor</cursorShape>
+            </property>
+            <property name="acceptDrops">
+             <bool>false</bool>
+            </property>
+            <property name="toolTip">
+             <string>Front</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="MyResources.qrc">
+              <normaloff>:/Images/front.png</normaloff>:/Images/front.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="pathLine">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="cursorPosition">
+             <number>0</number>
+            </property>
+            <property name="dragEnabled">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="searchLineEdit">
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="toolTipDuration">
+             <number>-1</number>
+            </property>
+            <property name="statusTip">
+             <string/>
+            </property>
+            <property name="accessibleName">
+             <string/>
+            </property>
+            <property name="accessibleDescription">
+             <string/>
+            </property>
+            <property name="inputMask">
+             <string/>
+            </property>
+            <property name="text">
+             <string>Search</string>
+            </property>
+            <property name="cursorPosition">
+             <number>6</number>
+            </property>
+            <property name="readOnly">
+             <bool>false</bool>
+            </property>
+            <property name="clearButtonEnabled">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="searchButton">
+            <property name="toolTip">
+             <string>Search</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="MyResources.qrc">
+              <normaloff>:/Images/search.png</normaloff>:/Images/search.png</iconset>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </item>
         <item>
-         <widget class="QPushButton" name="frontButton">
-          <property name="enabled">
-           <bool>false</bool>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QTreeWidget" name="treeWidget">
+            <column>
+             <property name="text">
+              <string notr="true">1</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+          <item>
+           <widget class="QTreeWidget" name="treeWidget_2">
+            <column>
+             <property name="text">
+              <string notr="true">1</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
           </property>
-          <property name="cursor">
-           <cursorShape>ArrowCursor</cursorShape>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>525</width>
+            <height>20</height>
+           </size>
           </property>
-          <property name="acceptDrops">
-           <bool>false</bool>
-          </property>
-          <property name="toolTip">
-           <string>Front</string>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="icon">
-           <iconset resource="MyResources.qrc">
-            <normaloff>:/Images/front.png</normaloff>:/Images/front.png</iconset>
-          </property>
-         </widget>
+         </spacer>
         </item>
         <item>
-         <widget class="QLineEdit" name="pathLineEdit"/>
-        </item>
-        <item>
-         <widget class="QPushButton" name="refreshButton">
-          <property name="toolTip">
-           <string>Refresh</string>
-          </property>
+         <widget class="QPushButton" name="pushButton">
           <property name="text">
            <string/>
           </property>
@@ -71,84 +175,6 @@
            <iconset resource="MyResources.qrc">
             <normaloff>:/Images/refresh.png</normaloff>:/Images/refresh.png</iconset>
           </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLineEdit" name="searchLineEdit">
-          <property name="toolTip">
-           <string/>
-          </property>
-          <property name="toolTipDuration">
-           <number>-1</number>
-          </property>
-          <property name="statusTip">
-           <string/>
-          </property>
-          <property name="accessibleName">
-           <string/>
-          </property>
-          <property name="accessibleDescription">
-           <string/>
-          </property>
-          <property name="inputMask">
-           <string/>
-          </property>
-          <property name="text">
-           <string>Search</string>
-          </property>
-          <property name="cursorPosition">
-           <number>0</number>
-          </property>
-          <property name="readOnly">
-           <bool>false</bool>
-          </property>
-          <property name="clearButtonEnabled">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="searchButton">
-          <property name="toolTip">
-           <string>Search</string>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="icon">
-           <iconset resource="MyResources.qrc">
-            <normaloff>:/Images/search.png</normaloff>:/Images/search.png</iconset>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_2">
-        <item>
-         <widget class="QTreeWidget" name="treeWidget">
-          <column>
-           <property name="text">
-            <string notr="true">1</string>
-           </property>
-          </column>
-         </widget>
-        </item>
-        <item>
-         <widget class="QScrollArea" name="scrollArea">
-          <property name="widgetResizable">
-           <bool>true</bool>
-          </property>
-          <widget class="QWidget" name="scrollAreaWidgetContents">
-           <property name="geometry">
-            <rect>
-             <x>0</x>
-             <y>0</y>
-             <width>246</width>
-             <height>250</height>
-            </rect>
-           </property>
-          </widget>
          </widget>
         </item>
        </layout>
@@ -162,7 +188,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>532</width>
+     <width>587</width>
      <height>21</height>
     </rect>
    </property>
@@ -172,6 +198,11 @@
     </property>
     <addaction name="actionNew_File"/>
     <addaction name="actionNueva_Carpeta"/>
+    <addaction name="separator"/>
+    <addaction name="actionEliminar"/>
+    <addaction name="actionCopiar"/>
+    <addaction name="actionCortar"/>
+    <addaction name="actionPegar"/>
    </widget>
    <addaction name="menuFile"/>
   </widget>
@@ -184,6 +215,10 @@
    </attribute>
    <addaction name="actionNew_File"/>
    <addaction name="actionNueva_Carpeta"/>
+   <addaction name="actionEliminar"/>
+   <addaction name="actionCopiar"/>
+   <addaction name="actionCortar"/>
+   <addaction name="actionPegar"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <action name="actionNew_File">
@@ -205,6 +240,42 @@
    </property>
    <property name="text">
     <string>Nueva Carpeta</string>
+   </property>
+  </action>
+  <action name="actionEliminar">
+   <property name="icon">
+    <iconset resource="MyResources.qrc">
+     <normaloff>:/Images/eliminar.png</normaloff>:/Images/eliminar.png</iconset>
+   </property>
+   <property name="text">
+    <string>Eliminar</string>
+   </property>
+  </action>
+  <action name="actionCopiar">
+   <property name="icon">
+    <iconset resource="MyResources.qrc">
+     <normaloff>:/Images/copy.png</normaloff>:/Images/copy.png</iconset>
+   </property>
+   <property name="text">
+    <string>Copiar</string>
+   </property>
+  </action>
+  <action name="actionCortar">
+   <property name="icon">
+    <iconset resource="MyResources.qrc">
+     <normaloff>:/Images/cut.png</normaloff>:/Images/cut.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cortar</string>
+   </property>
+  </action>
+  <action name="actionPegar">
+   <property name="icon">
+    <iconset resource="MyResources.qrc">
+     <normaloff>:/Images/paste.png</normaloff>:/Images/paste.png</iconset>
+   </property>
+   <property name="text">
+    <string>Pegar</string>
    </property>
   </action>
  </widget>

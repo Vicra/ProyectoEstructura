@@ -14,14 +14,21 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
+    filebase.cpp \
+    carpeta.cpp \
     lista.cpp \
-    nodo.cpp
+    archivo.cpp \
+    narchivo.cpp
 
 HEADERS  += mainwindow.h \
+    filebase.h \
+    carpeta.h \
     lista.h \
-    nodo.h
+    archivo.h \
+    narchivo.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    narchivo.ui
 
 RESOURCES += \
     MyResources.qrc
